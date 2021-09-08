@@ -1,6 +1,6 @@
 import Head from 'next/head'
-import Image from 'next/image'
 import styles from '../styles/Home.module.css'
+import Link from 'next/link';
 
 export default function Home() {
   return (
@@ -17,13 +17,13 @@ export default function Home() {
         </h1>
 
         <div className={styles.grid}>
-          <a href="/" className={styles.card}>
+          <Link href="/" className={styles.card}>
             <h2>Home</h2>
-          </a>
+          </Link>
 
-          <a href="/app-b" className={styles.card}>
+          <Link href="/app-b" className={styles.card}>
             <h2>App B</h2>
-          </a>
+          </Link>
         </div>
       </main>
     </div>
